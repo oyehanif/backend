@@ -9,7 +9,7 @@ const {userSignUpValidator} = require('../validator');
 const { upload } = require('../middleware');
 
 router.get('/test',(req, res) =>{
-    res.send("testing")
+    return res.send("testing")
 })
 router.post('/signup',userSignUpValidator , signup)
 router.post('/signin', signin)
